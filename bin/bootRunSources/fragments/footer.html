@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title>Footer Fragment</title>
+    <link href="../../static/css/cas.css" rel="stylesheet" th:href="@{${#themes.code('cas.standard.css.file')}}"/>
+</head>
+<body>
+    <footer th:fragment="footer" class="footer" role="contentinfo">
+        		default for everyone footer message
+        <div class="container">
+            <span id="copyright" th:utext="#{copyright}"></span>
+            <span th:text="#{my.custom.messaage}">This is the text </span>
+        </div>
+    </footer>
+</body>
+</html>
